@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3CAD3B93222869B100E923C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD3B92222869B100E923C4 /* AppDelegate.swift */; };
-		3CAD3B95222869B100E923C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD3B94222869B100E923C4 /* ViewController.swift */; };
 		3CAD3B98222869B100E923C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAD3B96222869B100E923C4 /* Main.storyboard */; };
 		3CAD3B9A222869B200E923C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CAD3B99222869B200E923C4 /* Assets.xcassets */; };
 		3CAD3B9D222869B200E923C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAD3B9B222869B200E923C4 /* LaunchScreen.storyboard */; };
 		3CAD3BA8222869B200E923C4 /* SmoooothOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD3BA7222869B200E923C4 /* SmoooothOperatorTests.swift */; };
 		3CAD3BB3222869B200E923C4 /* SmoooothOperatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD3BB2222869B200E923C4 /* SmoooothOperatorUITests.swift */; };
+		3CAD3BC122286A4700E923C4 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD3BC022286A4700E923C4 /* ImagesViewController.swift */; };
+		3CAD3BC322286AE800E923C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD3BC222286AE800E923C4 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		3CAD3B8F222869B100E923C4 /* SmoooothOperator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoooothOperator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CAD3B92222869B100E923C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CAD3B94222869B100E923C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CAD3B97222869B100E923C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CAD3B99222869B200E923C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CAD3B9C222869B200E923C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		3CAD3BAE222869B200E923C4 /* SmoooothOperatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmoooothOperatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CAD3BB2222869B200E923C4 /* SmoooothOperatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoooothOperatorUITests.swift; sourceTree = "<group>"; };
 		3CAD3BB4222869B200E923C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAD3BC022286A4700E923C4 /* ImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		3CAD3BC222286AE800E923C4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		3CAD3B91222869B100E923C4 /* SmoooothOperator */ = {
 			isa = PBXGroup;
 			children = (
+				3CAD3BC222286AE800E923C4 /* Constants.swift */,
+				3CAD3BC022286A4700E923C4 /* ImagesViewController.swift */,
 				3CAD3B92222869B100E923C4 /* AppDelegate.swift */,
-				3CAD3B94222869B100E923C4 /* ViewController.swift */,
 				3CAD3B96222869B100E923C4 /* Main.storyboard */,
 				3CAD3B99222869B200E923C4 /* Assets.xcassets */,
 				3CAD3B9B222869B200E923C4 /* LaunchScreen.storyboard */,
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CAD3B95222869B100E923C4 /* ViewController.swift in Sources */,
+				3CAD3BC122286A4700E923C4 /* ImagesViewController.swift in Sources */,
 				3CAD3B93222869B100E923C4 /* AppDelegate.swift in Sources */,
+				3CAD3BC322286AE800E923C4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
