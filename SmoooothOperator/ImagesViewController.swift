@@ -6,25 +6,35 @@
 //  Copyright © 2019 claire.roughan. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class ImagesViewController: UIViewController {
 
     @IBOutlet weak var table: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        table.delegate = self
-        table.dataSource = self
     }
+    
 }
 
 
 extension ImagesViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "sadeCell", for: indexPath)
-        cell.textLabel!.text = "it works"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sadeCell", for: indexPath) as! SadeTableViewCell
+        
+        if indexPath.row == 2 ||  indexPath.row == 12 {
+             cell.stretchyLbl.text = IMAGES_URL_ARRAY[indexPath.row]
+        }else if indexPath.row == 3 || indexPath.row == 7 || indexPath.row == 20 {
+             cell.stretchyLbl.text = MEDIUM_TEXT
+        }else {
+             cell.stretchyLbl.text! = SMALL_TEXT
+        }
+
+       cell.setCellImageWithURL(urlStr: IMAGES_URL_ARRAY[indexPath.row])
+
         return cell
     }
     
@@ -33,6 +43,7 @@ extension ImagesViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return IMAGES_URL_ARRAY.count
     }
 }
+
