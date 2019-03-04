@@ -8,14 +8,58 @@
 
 import UIKit
 
-class RoundStyleImageView: UIImageView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+@IBDesignable class RoundStyleImageView: UIImageView {
+  
+        @IBInspectable var cornerRadius: Double {
+            get {
+                return Double(self.layer.cornerRadius)
+            }set {
+                self.layer.cornerRadius = CGFloat(newValue)
+            }
+        }
+        @IBInspectable var borderWidth: Double {
+            get {
+                return Double(self.layer.borderWidth)
+            }
+            set {
+                self.layer.borderWidth = CGFloat(newValue)
+            }
+        }
+        @IBInspectable var borderColor: UIColor? {
+            get {
+                return UIColor(cgColor: self.layer.borderColor!)
+            }
+            set {
+                self.layer.borderColor = newValue?.cgColor
+            }
+        }
+    
+    // Only the imageView has responsibiliy for its data
+    @objc func loadImageForURL(urlStr: String) {
+        
+        if URL(string: urlStr) != nil {
+            if let url = URL(string: urlStr) {
+                
+                let request = URLRequest(url: url)
+                
+                // Create Data Task with URLRequest
+                let dataTask = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) -> Void in
+                    
+                    if error != nil {
+                        print(error!)
+                        return
+                    }
+                    if let httpResponse = response as? HTTPURLResponse {
+                        print("Got image for  \(urlStr) ------ \(httpResponse.statusCode)\n\n")
+                        // Simulate dodgy network, causes bad scrolling and wrong images to show due to cell reuse
+                        //sleep(1)
+                        DispatchQueue.main.async {
+                            self.image = UIImage(data: data!)
+                        }
+                    }
+                })
+                dataTask.resume()
+            }
+        }
     }
-    */
-
 }
