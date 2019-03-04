@@ -6,7 +6,10 @@
 //  Copyright © 2019 claire.roughan. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+// 65 124 171
+let TINT_COLOUR = UIColor (red: 65.0/255, green: 124.0/255, blue: 171.0/255, alpha: 1.0)
 
 let SMALL_TEXT = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
@@ -95,7 +98,7 @@ let IMAGES_URL_ARRAY = ["https://imgix.ranker.com/user_node_img/58/1155962/origi
                         "https://imgix.ranker.com/user_node_img/50019/1000369992/original/peeves-film-characters-photo-u1?w=87&h=87&fit=crop&crop=faces&q=60&fm=jpg",
 
                         "https://imgix.ranker.com/user_node_img/117/2338114/original/viktor-krum-film-characters-photo-u1?w=87&h=87&fit=crop&crop=faces&q=60&fm=jpg",
-
+//
                         "https://imgix.ranker.com/user_node_img/54/1070730/original/gilderoy-lockhart-film-characters-photo-u1?w=87&h=87&fit=crop&crop=faces&q=60&fm=jpg",
 
                         "https://imgix.ranker.com/node_img/1115/22298350/original/angelina-johnson-film-characters-photo-1?w=87&h=87&fit=crop&crop=faces&q=60&fm=jpg",
