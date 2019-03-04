@@ -9,6 +9,10 @@
 import UIKit
 
 @IBDesignable class RoundStyleImageView: UIImageView {
+    
+    var imageUrlStr = String()
+    
+   let imageCache = NSCache<NSString, UIImage>()
   
         @IBInspectable var cornerRadius: Double {
             get {
@@ -35,7 +39,14 @@ import UIKit
         }
     
     // Only the imageView has responsibiliy for its data
-    @objc func loadImageForURL(urlStr: String) {
+  @objc func loadImageForURL(urlStr: String) {
+        
+        if let imageFromCache = imageCache.object(forKey: urlStr as NSString) {
+            // print("Got image from CACHE -- \(urlStr) ------ \n\n")
+             print("Got image from CACHE ------ \n\n")
+            self.image = imageFromCache as UIImage
+            return
+        }
         
         if URL(string: urlStr) != nil {
             if let url = URL(string: urlStr) {
@@ -50,11 +61,14 @@ import UIKit
                         return
                     }
                     if let httpResponse = response as? HTTPURLResponse {
-                        print("Got image for  \(urlStr) ------ \(httpResponse.statusCode)\n\n")
+                        print("\nGot image for  \(urlStr) ------ \(httpResponse.statusCode)\n\n")
                         // Simulate dodgy network, causes bad scrolling and wrong images to show due to cell reuse
                         //sleep(1)
                         DispatchQueue.main.async {
-                            self.image = UIImage(data: data!)
+                            let imageToCache =  UIImage(data: data!)
+                            self.image = imageToCache
+                            self.imageCache.setObject(imageToCache!, forKey: (urlStr as AnyObject) as! NSString)
+                            
                         }
                     }
                 })
