@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4F636F222D7E1400EA77C1 /* RoundStyleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F636E222D7E1400EA77C1 /* RoundStyleImageView.swift */; };
 		3CAD3B93222869B100E923C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD3B92222869B100E923C4 /* AppDelegate.swift */; };
 		3CAD3B98222869B100E923C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAD3B96222869B100E923C4 /* Main.storyboard */; };
 		3CAD3B9A222869B200E923C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CAD3B99222869B200E923C4 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C4F636E222D7E1400EA77C1 /* RoundStyleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundStyleImageView.swift; sourceTree = "<group>"; };
 		3CAD3B8F222869B100E923C4 /* SmoooothOperator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoooothOperator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CAD3B92222869B100E923C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CAD3B97222869B100E923C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				3CAD3B9B222869B200E923C4 /* LaunchScreen.storyboard */,
 				3CAD3B9E222869B200E923C4 /* Info.plist */,
 				3CAD3BC822297DFA00E923C4 /* Extensions.swift */,
+				3C4F636E222D7E1400EA77C1 /* RoundStyleImageView.swift */,
 			);
 			path = SmoooothOperator;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					3CAD3B8E222869B100E923C4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					3CAD3BA2222869B200E923C4 = {
 						CreatedOnToolsVersion = 10.1;
@@ -270,6 +274,7 @@
 				3CAD3B93222869B100E923C4 /* AppDelegate.swift in Sources */,
 				3CAD3BC522286B4900E923C4 /* SadeTableViewCell.swift in Sources */,
 				3CAD3BC322286AE800E923C4 /* Constants.swift in Sources */,
+				3C4F636F222D7E1400EA77C1 /* RoundStyleImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,8 +452,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HN55VQ5D69;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SmoooothOperator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.asitappens.SmoooothOperator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -468,8 +474,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HN55VQ5D69;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SmoooothOperator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,7 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.asitappens.SmoooothOperator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -488,6 +495,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SmoooothOperatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -508,6 +516,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SmoooothOperatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
