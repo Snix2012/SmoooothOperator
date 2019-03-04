@@ -14,6 +14,7 @@ class ImagesViewController: UIViewController {
     @IBOutlet weak var table: UITableView!
 
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         super.viewDidLoad()
     }
     
