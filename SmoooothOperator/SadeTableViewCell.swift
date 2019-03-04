@@ -10,7 +10,7 @@ import UIKit
 
 class SadeTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var cellImageView: UIImageView!
+    @IBOutlet weak var cellImageView: RoundStyleImageView!
     @IBOutlet weak var stretchyLbl: UILabel!
 
     // Make cell responsible for obtaining its image
