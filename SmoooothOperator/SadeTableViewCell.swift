@@ -13,15 +13,9 @@ class SadeTableViewCell: UITableViewCell {
     @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var stretchyLbl: UILabel!
 
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
-//
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
+    // Make cell responsible for obtaining its image
+    func setCellImageWithURL(urlStr : String) {
+        self.cellImageView.loadImageForURL(urlStr: urlStr)
+    }
 
 }
