@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Images Download-->
+        <!--Stretchy TableView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ImagesViewController" customModule="SmoooothOperator" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                                                             <real key="value" value="4"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" red="1" green="0.82476548559999996" blue="0.97262981410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="value" red="0.25490196078431371" green="0.48627450980392156" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="50"/>
@@ -49,7 +49,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfW-GA-g8m">
                                                     <rect key="frame" x="135" y="20" width="230" height="20.5"/>
-                                                    <color key="backgroundColor" red="1" green="0.82476548559999996" blue="0.97262981410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.25490196078431371" green="0.48627450980392156" blue="0.97254901960784312" alpha="0.15414005474452555" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -85,7 +85,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Images Download" id="dQw-qc-SpL"/>
+                    <navigationItem key="navigationItem" title="Stretchy TableView" id="dQw-qc-SpL"/>
                     <connections>
                         <outlet property="table" destination="4Zo-t6-002" id="5wD-b5-eNA"/>
                     </connections>
