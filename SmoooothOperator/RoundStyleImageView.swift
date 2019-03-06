@@ -42,7 +42,6 @@ import UIKit
   @objc func loadImageForURL(urlStr: String) {
         
         if let imageFromCache = imageCache.object(forKey: urlStr as NSString) {
-            // print("Got image from CACHE -- \(urlStr) ------ \n\n")
              print("Got image from CACHE ------ \n\n")
             self.image = imageFromCache as UIImage
             return
