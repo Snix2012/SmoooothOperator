@@ -9,10 +9,9 @@
 import UIKit
 
 @IBDesignable class RoundStyleImageView: UIImageView {
-    
-    var imageUrlStr = String()
-    
-   let imageCache = NSCache<NSString, UIImage>()
+   
+    let imageCache = NSCache<NSString, UIImage>()
+    var imageToCache =  UIImage()
   
         @IBInspectable var cornerRadius: Double {
             get {
@@ -64,10 +63,9 @@ import UIKit
                         // Simulate dodgy network, causes bad scrolling and wrong images to show due to cell reuse
                         //sleep(1)
                         DispatchQueue.main.async {
-                            let imageToCache =  UIImage(data: data!)
-                            self.image = imageToCache
-                            self.imageCache.setObject(imageToCache!, forKey: (urlStr as AnyObject) as! NSString)
-                            
+                            self.imageToCache =  UIImage(data: data!)!
+                            self.image = self.imageToCache
+                            self.imageCache.setObject(self.imageToCache, forKey: (urlStr as AnyObject) as! NSString)
                         }
                     }
                 })
