@@ -98,7 +98,7 @@ let IMAGES_URL_ARRAY = ["https://imgix.ranker.com/user_node_img/58/1155962/origi
                         "https://imgix.ranker.com/user_node_img/50019/1000369992/original/peeves-film-characters-photo-u1?w=87&h=87&fit=crop&crop=faces&q=60&fm=jpg",
 
                         "https://imgix.ranker.com/user_node_img/117/2338114/original/viktor-krum-film-characters-photo-u1?w=87&h=87&fit=crop&crop=faces&q=60&fm=jpg",
-//
+
                         "https://imgix.ranker.com/user_node_img/54/1070730/original/gilderoy-lockhart-film-characters-photo-u1?w=87&h=87&fit=crop&crop=faces&q=60&fm=jpg",
 
                         "https://imgix.ranker.com/node_img/1115/22298350/original/angelina-johnson-film-characters-photo-1?w=87&h=87&fit=crop&crop=faces&q=60&fm=jpg",
