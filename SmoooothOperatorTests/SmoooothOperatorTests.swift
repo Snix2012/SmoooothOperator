@@ -77,7 +77,7 @@ class SmoooothOperatorTests: XCTestCase {
         // given
         let url = URL(string: "https://imgix.ranker.com/user_node_img/137/2729278/original/harry-potter-film-characters-photo-u3?w=87&h=87&fit=crop&crop=faces&q=60&fm=jpg")
         
-        // 1
+        // entering the completion handler will fulfill the expectation
         let promise = expectation(description: "Completion handler invoked")
         var statusCode: Int?
         var responseError: Error?
@@ -86,7 +86,7 @@ class SmoooothOperatorTests: XCTestCase {
         let dataTask = sessionUnderTest.dataTask(with: url!) { data, response, error in
             statusCode = (response as? HTTPURLResponse)?.statusCode
             responseError = error
-            // 2
+            // expectation fulfilled
             promise.fulfill()
         }
         dataTask.resume()
