@@ -42,7 +42,7 @@ class SmoooothOperatorTests: XCTestCase {
     }
     
     
-    // Asynchronous test on method that sets imageView from api download
+    // Asynchronous test: success fast, failure slow
     func testValidCallToImageURLsGetsHTTPStatusCode200() {
         
         // given - set up any values needed
