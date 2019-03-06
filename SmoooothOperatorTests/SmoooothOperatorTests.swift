@@ -35,7 +35,7 @@ class SmoooothOperatorTests: XCTestCase {
          XCTAssertNotNil(imageView.imageCache.object(forKey: url as NSString))
     }
     
-    func testImageViewloadImageForURLDoesNotCachedNonImageULS() {
+    func testImageViewloadImageForURLDoesNotCachedNonImageURLS() {
         let url = "https://www.google.com"
         imageView.loadImageForURL(urlStr: url)
         XCTAssertNil(imageView.imageCache.object(forKey: url as NSString))
